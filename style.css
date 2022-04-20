@@ -1,46 +1,57 @@
-body {
-  background: #fafafa;
+body{
+    background: whitesmoke;
 }
 
-.dino {
-  position: absolute;
-  bottom: 0;
-  background-image: url(dino.png);
-  width: 60px;
-  height: 60px;
+.dino{
+    width: 60px;
+    height: 60px;
+    background-image: url(dino1.png);
+    background-repeat: no-repeat;
+    position: absolute; /* fica na posição independente do que está a volta*/
+    bottom: 0px;
+}   
+
+.cactus{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(cacto.png);
+
+}
+.game-over{
+    margin-top: 50px;
+    font-family: fantasy;
+    text-align: center;
+    color: red;
 }
 
-.cactus {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  bottom: 0;
-  background-image: url(cactus.png);
+@keyframes slideright{
+    from{
+        background-position: 70000%;
+    }
+    to{
+        background-position: 0;
+    }
 }
 
-.game-over {
-  text-align: center;
-  color: #666;
-  margin: 50px 0;
-  font-family: arial;
+@-webkit-keyframes slideright{
+    from{
+        background-position: 70000%;
+    }
+    to{
+        background-position: 0;
+    }
 }
 
-@keyframes slideright {
-  from {
-      background-position: 70000%;
-  }
-  to {
-      background-position: 0%;
-  }
-}
-
-.background {
-  position: absolute;
-  bottom: 0px;
-  background-image: url('background.png');
-  background-repeat: repeat-x;
-  animation: slideright 600s infinite linear;
-  -webkit-animation: slideright 600s infinite linear;
-  width: 100%;
-  height: 200px;
+.background{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    background-image: url(background.png);
+    background-repeat: repeat-x;
+    -webkit-animation: slideright 600s infinite linear;
+    animation: slideright 600s infinite linear;
+    
 }
