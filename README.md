@@ -1,6 +1,6 @@
 # Dino-sem-internet
 ## Desenvolvimento do jogo dino sem internet 
-- mofificações realizadas em personagem e cacto;
+- modificações realizadas em personagem e cacto;
 - Desenvolvido em HTML, CSS, JS
 - manipulação de DOM.
 
